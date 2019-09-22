@@ -23,3 +23,15 @@ def game():
 
 def reverse_string(string):
     print(string[::-1])
+
+# area of a circle
+
+while True:
+    red = input('Enter Radius of Circle: ')
+    if red == 'x':
+        break
+    else:
+        redius = float(red)
+        area = 3.14 * redius * redius
+        print(str(redius) + ' result')
+# simple Python calculator
