@@ -71,8 +71,7 @@ def calculator_promt():
            print("{}{}{}".format(num,signe,num2) + "= " + format(num * num2))
         elif signe == "/":
            print("{}{}{}".format(num,signe,num2) + "= " + format(num / num2))
-        elif signe
-        else:
+        elif signe != '+' and '-' and '*' and '/' :
             print("test")
     except ZeroDivisionError:
         print(" the  Number  can't be calculed")
