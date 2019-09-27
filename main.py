@@ -26,12 +26,55 @@ def reverse_string(string):
 
 # area of a circle
 
-while True:
-    red = input('Enter Radius of Circle: ')
-    if red == 'x':
-        break
-    else:
-        redius = float(red)
-        area = 3.14 * redius * redius
-        print(str(redius) + ' result')
+def Radius_circle():
+    while True:
+        red = input('Enter Radius of Circle: ')
+        if red == 'x':
+            break
+        else:
+            redius = float(red)
+            area = 3.14 * redius * redius
+            print(str(redius) + ' result')
+
 # simple Python calculator
+def calculator (num1,symbol,num2):
+
+    if symbol == "+":
+        print(num1 + num2)
+    elif symbol == "-":
+        print(num1 - num2)
+    elif symbol == "*":
+        print( num1 * num2)
+    elif symbol == "/":
+        print(num1 / num2)
+calculator(1500,'/',6)
+
+def calculator_promt():
+    print("+ :  Addition")
+    print("- :  Subtraction")
+    print("* :  multiplication")
+    print("/ :  Division")
+    try:
+        num = int(input("First Number : "))
+        signe = input("What to do ? (+) (-) (*) (/): ")
+        num2 = int(input("Seconde Number : "))
+    except ValueError:
+        print("you didn't give any value")
+    except TypeError:
+        print("The value is not Number")
+    try:
+        if  signe == "+":
+           print("{}{}{}".format(num,signe,num2) + "= " + format(num + num2))
+        elif signe == "-":
+           print("{}{}{}".format(num,signe,num2) + "= " + format(num - num2))
+        elif signe == "*":
+           print("{}{}{}".format(num,signe,num2) + "= " + format(num * num2))
+        elif signe == "/":
+           print("{}{}{}".format(num,signe,num2) + "= " + format(num / num2))
+        elif signe
+        else:
+            print("test")
+    except ZeroDivisionError:
+        print(" the  Number  can't be calculed")
+
+calculator_promt()
