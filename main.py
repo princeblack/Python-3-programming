@@ -64,15 +64,15 @@ def calculator_promt():
         print("The value is not Number")
     try:
         if  signe == "+":
-           print("{}{}{}".format(num,signe,num2) + "= " + format(num + num2))
+           print("{} {} {} ".format(num,signe,num2) + "= " + format(num + num2))
         elif signe == "-":
-           print("{}{}{}".format(num,signe,num2) + "= " + format(num - num2))
+           print("{} {} {} ".format(num,signe,num2) + "= " + format(num - num2))
         elif signe == "*":
-           print("{}{}{}".format(num,signe,num2) + "= " + format(num * num2))
+           print("{} {} {} ".format(num,signe,num2) + "= " + format(num * num2))
         elif signe == "/":
-           print("{}{}{}".format(num,signe,num2) + "= " + format(num / num2))
+           print("{} {} {} ".format(num,signe,num2) + "= " + format(num / num2))
         elif signe != '+' and '-' and '*' and '/' :
-            print("test")
+            print("the operation  ")
     except ZeroDivisionError:
         print(" the  Number  can't be calculed")
 
